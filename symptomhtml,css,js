@@ -1,0 +1,320 @@
+chec.html 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<style>
+.inputBox{
+text-align: center;
+}
+.box {
+  background-image: url(https://static01.nyt.com/images/2020/03/25/smarter-living/00sl-coronaanxiety-print/00sl-coronaanxiety-videoSixteenByNineJumbo1600.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+<meta charset="ISO-8859-1">
+<title>CHECK</title>
+</head>
+<body>
+ <div class="box">
+        <div class="inputBox">
+        <form>
+            <br>
+            <h1>CHECKER</h1>
+            <h1>LETS UPDATE YOUR BODY CONDITION</h1>
+            <div class="inputBox">
+            <h1>TEMPERATURE</h1>
+            <input type="text" name="temp" placeholder="Enter your body Temperature" id="temp">
+            </div>
+            <br>
+         </form>
+         <form>
+         <div class="inputBox">
+        <h1>PULSE RATE</h1>
+            <input type="text" name="pulserate" placeholder="Enter your pulse rate" id="pulserate" >
+            </div>
+            <br>
+        </form>
+        <form>
+       <div class="inputBox">
+        <h1>HEART BEAT</h1>
+        <input type="text" name="HEART BEAT" placeholder="Enter your Heart beat" id="heartrate">
+        </div>
+        <br>
+       </form>
+       <form>
+        <div class="inputBox">
+        <h1>AGE</h1>
+        <input type="text" name="AGE" placeholder="Enter your AGE" id="age">
+        </div>
+        </form>
+        <br>
+        <button onClick="calculate()">Calculate</button>
+        </div>
+        </div>  
+        <script>
+        function calculate(){
+        var t1=document.getElementById("temp").value;
+            var pulse=document.getElementById("pulserate").value;
+            var heart=document.getElementById("heartrate").value;
+            var age=document.getElementById("age").value;
+            window.location.href=" ";
+            if(t1 >= 97 && t1<=101)
+            {
+            document.write("TEMPERATURE IS NORMAL");
+            document.write("<br />");
+            }
+            if(pulse >=60 && pulse<=100)
+            {
+            document.write("PULSE IS NORMAL\n");
+            document.write("<br />");
+            }
+            if(age<=1)
+            {
+            if(heart>=120 && heart<=160)
+                {
+            document.write("BABY'S HEART RATE IS NORMAL\n");
+                }else
+                {
+                document.write("BABY'S HEART RATE IS ABNORMAL\n");
+                }
+            }else if(age<=2)
+            {
+            if(heart>=90 && heart<=140)
+            {
+            document.write("BABY'S HEART RATE IS NORMAL\n");
+            }else
+            {
+            document.write("BABY'S HEART RATE IS ABRNOMAL\n");
+            }
+           
+            }else if(age<=6)
+            {
+            if(heart>=80 && heart<=110)
+            {
+            document.write("CHILD'S HEART RATE IS NORMAL\n");
+            }else
+            {
+            document.write("CHILD'S HEART RATE IS ABNORMAL\n");
+            }
+            }else if(age<=12)
+            {
+            if(heart>=75 && heart<=100)
+            {
+            document.write("CHILD'S HEART RATE IS NORMAL");
+            }else
+            {
+            document.write("CHILD'S HEART RATE IS ABNORMAL");
+            }
+            }else if(age<=19)
+            {
+            if(heart>=60 && heart<=90)
+            {
+            document.write("ADULT HEART RATE IS NORMAL");
+            }else
+            {
+            document.write("ADULT HEART RATE IS ABNORMAL");
+            }
+            }else
+            {
+            if(heart<=60 && heart<=100)
+            {
+            document.write("HEART RATE OF THE PERSON IS NORMAL");
+            }else
+            {
+            document.write("HEART RATE OF THE PERSON IS ABNORMAL");
+            }
+            }
+           
+        }
+        </script>
+</body>
+</html> 
+check.jsp
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-image: url(https://static01.nyt.com/images/2020/03/25/smarter-living/00sl-coronaanxiety-print/00sl-coronaanxiety-videoSixteenByNineJumbo1600.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.in{
+text-align:center;
+}
+</style>
+<meta charset="ISO-8859-1">
+<title>CHECK</title>
+</head>
+<body>
+<div class="in">
+<h1>CHECKER</h1>
+<form action="mycheck.jsp" method="post">
+<h2>Enter Your Age</h2>
+<input type="text" name="age" required/>
+<h2>Enter Your Temperature</h2>
+<input type="text" name="temper" required/>
+<h2>Enter Your PulseRate</h2>
+<input type="text" name="pulse" required/>
+<h2>Enter Your HeartBeat </h2>
+<input type="text" name="heart" required/>
+<br><br>
+<input type="submit" value="checker"/><br> <br>
+</form>
+</div>
+</body>
+</html> 
+doctor.html 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  background: url(https://static01.nyt.com/images/2020/03/25/smarter-living/00sl-coronaanxiety-print/00sl-coronaanxiety-videoSixteenByNineJumbo1600.jpg);
+  background-size: cover;
+  font-family: sans-serif;
+}
+.in{
+text-align: center;
+color: black;
+}
+</style>
+<title>DOCTOR DETAILS</title>
+</head>
+<body>
+<br>
+<br>
+<div class="in">
+<h1>ABOUT THE DOCTOR</h1>
+<br>
+<H1>NAME:DR NAVEEN MBBS</H1>
+<br>
+<H1>Email:drnaveen@gmail.com</H1>
+<br>
+<H1>Phone Number:8768086800</h1>
+<br>
+<h1>Hospital Details:Apollo hospital,chennai</h1>
+<br>
+<h2>For extra support visit your nearby hospital</h2>
+</div>
+</body>
+</html> 
+login.jsp 
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+<link rel="stylesheet" type='text/css' href="style.css"/>
+</head>
+<body>
+<div class="box">
+  <h2>Login</h2>
+  <form action="validate.jsp" method="post">
+    <div class="inputBox">
+      <input type="text" name="lgnuser" required/>
+      <label>USERNAME</label>
+    </div>
+    <div class="inputBox">
+      <input type="password" name="lgnpass" required/>
+        <label>PASSWORD</label>
+    </div>
+    <input type="submit" value="Sign in"><br> <br>
+    <input type="reset" value="clear"/>
+  </form>
+</div>
+</body>
+</html>
+mycheck.jsp
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@page import="java.sql.*"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>mychecker</title>
+</head>
+<body>
+<%
+   String age=request.getParameter("age");
+   session.setAttribute("sessage", age);
+   String temp=request.getParameter("temper");
+   session.setAttribute("sesstemp", temp);
+   String pulse=request.getParameter("pulse");
+   session.setAttribute("sesspulse", pulse);
+   String heart=request.getParameter("heart");
+   session.setAttribute("sessheart", heart);
+  try{
+ Class.forName("com.mysql.jdbc.Driver");
+ Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/mydata3","root","Aswin@123");
+ Statement st=con.createStatement();
+      int i=st.executeUpdate("insert into checker(temp,pulse,heart,age)values('"+temp+"','"+pulse+"','"+heart+"','"+age+"')");
+      Statement st1=con.createStatement();
+      String myname=(String)session.getAttribute("sessname");
+      String myemail=(String)session.getAttribute("sessemail");
+      String myphone=(String)session.getAttribute("sessnumb");
+      String myage=(String)session.getAttribute("sessage");
+      String mytemp=(String)session.getAttribute("sesstemp");
+      String myheart=(String)session.getAttribute("sessheart");
+      String mypulse=(String)session.getAttribute("sesspulse");
+      int j=st1.executeUpdate("insert into alldetails(name,email,phonenum,age,temp,heart,pulse)values('"+myname+"','"+myemail+"','"+myphone+"','"+myage+"','"+mytemp+"','"+myheart+"','"+mypulse+"')");
+      out.println("Data is successfully inserted!");
+ response.sendRedirect("save.html");
+  }
+  catch(Exception e)
+  {
+ out.print("Database error");
+  }
+%>
+</body>
+</html>
+personal.jsp 
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background: url(https://www.euro.who.int/__data/assets/image/0004/436558/coronavirus-COVID-19-WHO-Europe_500x300.png);
+    background-size: cover;
+    font-family: sans-serif;
+}
+.in{
+text-align:center;
+}
+</style>
+<title>PERSONAL DETAILS</title>
+</head>
+<body>
+<div class="in">
+<form action="personaldetails.jsp" method="post">
+<h2>Enter Your Name</h2>
+<input type="text" name="name" required/>
+<h2>Enter Your Email</h2>
+<input type="text" name="email" required/>
+<h2>Enter Your Number</h2>
+<input type="text" name="phonenum" required/>
+<br><br>
+<input type="submit" value="Register"/><br> <br>
+</form>  
+</div>
+</body>
+</html>
